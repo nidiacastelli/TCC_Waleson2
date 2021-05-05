@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppTCC_W.App">
+    <Application.Resources>
+        <Style x:Key="TituloMenu" TargetType="Label">
+            <Setter Property="TextColor" Value="Black" />
+            <Setter Property="FontSize" Value="18" />
+            <Setter Property="FontAttributes" Value="Bold" />
+            <Setter Property="HorizontalTextAlignment" Value="Center" />
+        </Style>
+
+        <Style x:Key="titulos" TargetType="Label" BaseResourceKey="TituloMenu">
+            <Setter Property="FontSize" Value="18" />
+        </Style>
+
+        <Style x:Key="botao" TargetType="Button">
+            <Setter Property="CornerRadius" Value="10" />
+            <Setter Property="TextColor" Value="White" />
+        </Style>
+    </Application.Resources>
+</Application>

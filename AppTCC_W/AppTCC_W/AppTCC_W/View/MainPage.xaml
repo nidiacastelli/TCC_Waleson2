@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppTCC_W.MainPage">
+
+    <StackLayout BackgroundColor="#355D96" Padding="10">
+        <Frame BackgroundColor="White" Padding="6" CornerRadius="2">
+            <Grid x:Name="G1" RowSpacing="1" Padding="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="120" />
+                    <RowDefinition Height="150" />
+                    <RowDefinition Height="150" />
+                    <RowDefinition Height="150" />
+                    <!--  <RowDefinition Height="*" /> -->
+                </Grid.RowDefinitions>
+
+                <!--Inicio Frame Logo-->
+                <StackLayout Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="Red" >
+                    <StackLayout>
+                        <Image  Aspect="AspectFit" HeightRequest="80" />
+                        <Label Text="Label hmed" FontSize="Large" TextColor="Green" Padding="0" />
+                    </StackLayout>
+                </StackLayout>
+                <!--Fim Frame Logo-->
+
+                <StackLayout Grid.Row="2" Grid.Column="0" Padding="20" >
+                    <!--Inicio Botão Usuario-->
+                    <!--<Image Source="usuario" Aspect="AspectFit" />-->
+                    <ImageButton x:Name="btnusuarios"
+                                 Aspect="AspectFit"
+                                 Clicked="btn_usuarios"/>
+                    <Label Text="Usuarios" Style="{StaticResource TituloMenu}"/>
+                </StackLayout>
+                <!--Fim Botao Usuario-->
+
+                <StackLayout Grid.Row="2" Grid.Column="1" Padding="20" >
+                    <!--Inicio Botão Medicamentos-->
+                    <ImageButton x:Name="btnmedicamentos"
+                                 Aspect="AspectFill"
+                                 Clicked="btn_medicamentos"
+                               
+                              
+                                 />
+                    <Label Text="Medicamentos" Style="{StaticResource TituloMenu}"/>
+                </StackLayout>
+                <!--Fim Botao Medicamentos-->
+
+                <StackLayout Grid.Row="3" Grid.Column="0" Padding="20" >
+                    <!--Inicio Botão Historico-->
+                    <ImageButton x:Name="btnhistorico"
+                                 Aspect="AspectFill"
+                                 Clicked="btn_historico"
+                              
+                                 HeightRequest="125"
+                                 />
+                    <Label Text="Histórico" Style="{StaticResource TituloMenu}"/>
+                </StackLayout>
+                <!--Fim Botao Historico-->
+
+                <StackLayout Grid.Row="3" Grid.Column="1" Padding="20">
+                    <!--Inicio Botão SOS-->
+                    <ImageButton x:Name="btnsos"
+                                 Aspect="AspectFill"
+                                 Clicked="btn_sos"
+                                 
+                                 HeightRequest="125"
+                                 
+                                 />
+                    <Label Text="S.O.S" Style="{StaticResource TituloMenu}"/>
+                </StackLayout>
+                <!--Fim Botao Usuario-->
+            </Grid>
+            <!-- Fim de toda GRID-->
+        </Frame>
+    </StackLayout>
+
+</ContentPage>
